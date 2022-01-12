@@ -27,11 +27,8 @@ android {
 dependencies {
     implementation libraries.appCompatX
     implementation libraries.recyclerViewX
-
     implementation libraries.storIOSQLite
-
     implementation libraries.storIOSQLiteAnnotations
     annotationProcessor libraries.storIOSQLiteAnnotationsProcessor
-
     testImplementation libraries.junit
 }

@@ -9,7 +9,7 @@ android {
         versionCode Integer.parseInt(VERSION_CODE)
         minSdkVersion rootProject.ext.minSdkVersion
 
-        testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
     }
 
     packagingOptions {
@@ -23,10 +23,8 @@ android {
 
 dependencies {
     api libraries.supportAnnotations
-
     compileOnly libraries.rxJava2
     testImplementation libraries.rxJava2
-
     testImplementation libraries.junit
     testImplementation libraries.assertJ
     testImplementation libraries.mockitoCore
